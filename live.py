@@ -27,15 +27,15 @@ option = st.selectbox(
      ('color_1', 'color_2', 'color_3', 'color_4', 'color_5'))
 
 if option =='color_1':
-    color = [63, 64, 108] 
-    co = [206,157,151]
-    m = '#BBA6BD'
-elif option == 'color_2':
-    color = [10, 5, 120]
+    # color = [63, 64, 108] # 212, 44, 45
+    color = [10, 5, 120] # 212, 44, 45
     m = '#945E9C'
+elif option == 'color_2':
+    color = [170, 5, 140]
+    m = '#CB1D70'
 elif option == 'color_3':
-    color = [60,60,60]
-    m = '#d0b49f'
+    color = [10, 20, 250]
+    m = '#6B3D9A'
 elif option == 'color_4':
     color = [107, 182, 203]
     m = '#9DB6CC' 
@@ -47,6 +47,7 @@ else :
 
 
 colors = st.color_picker('Pick A Color', m)
+
 
 class VideoProcessor:
 	def recv(self, frame):
